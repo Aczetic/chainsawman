@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CHAINSAW MAN
+        </title>
+        <meta name:="viewport" content="width=device-width initial-scale:1.0">
+        <link rel = "stylesheet" type = "text/css" href = "css/style.css">
+        <style>
+        
+
+        </style>
+    </head>
+    <body onload="playTheVideo(); initialTransition() ; " onscroll = 'scrollValueTracker()'  >
+        <script lang = 'javascript'> 
+                setTimeout( function() { document.documentElement.scrollTo({top:0}); // to reset the previous scrolling
+                                         document.body.setAttribute('onscroll' , 'scrollEffect()');
+            } , 100);
+                // setTimeout here is used because the scrollTo does not affect the viewport may be because it has not been completely rendered.
+        </script>
+       <!-------------------------------------------------------- Hero start from here ----------------------------------------------------------------->
+      <div id = 'scrollWrapperRelative' >
+         <div id = 'scrollWrapperFixed' >
+           
+                <div id = 'hero'>
+                    <img id = "hero-image" src = 'img\chainsawman_banner.png' >
+                    <video loop id = 'video' muted>
+                        <source src = "vid/Chainsaw Man - Official Trailer (English Dub).mp4">
+                    </video>
+                
+                    <div id = 'gradient-box'></div>
+                
+                    <div id= "hero-info">
+                        <img id = 'logo' src = 'img\chainsawman_logo.png'>
+                        <p id = 'title'>CHAINSAW MAN</p>
+                        <p id = 'content'> 
+                            Denji is robbed of a normal teenage life, left with nothing but his deadbeat father's overwhelming debt. His only companion is his pet, the chainsaw devil Pochita, with whom he slays devils for money that inevitably ends up in the yakuza's pockets. All Denji can do is dream of a good, simple life: one with delicious food and a beautiful girlfriend by his side. But an act of greedy betrayal by the yakuza leads to Denji's brutal, untimely death, crushing all hope of him ever achieving happiness. Remarkably, an old contract allows Pochita to merge with the deceased Denji and bestow devil powers on him, changing him into a hybrid able to transform his body parts into chainsaws. Because Denji's new abilities pose a significant risk to society, the Public Safety Bureau's elite devil hunter Makima takes him in, letting him live as long as he obeys her command. Guided by the promise of a content life alongside an attractive woman, Denji devotes everything and fights with all his might to make his naive dreams a reality. 
+                        </p>
+                        <div id = 'show-info'>
+                            <div class = 'wrapper'>
+                                <p class='label'>Year:&nbsp</p>
+                                <p id='year'>2022</p>
+                            </div>
+                            <div class = 'divider'>|</div>
+                            <div class = 'wrapper'>
+                                <p class = 'label' >MAL Score:&nbsp</p>
+                                <p  id = 'malscore' >8.57</p>
+                            </div>
+                            <div class = 'divider'>|</div>
+                        
+                            <div class = 'wrapper'>    
+                                <p class = 'label'>Rating:&nbsp</p>
+                                <p  id = 'ageRating' >R</p>
+                            </div> 
+                            <div class = 'divider'>|</div>   
+                            <div class = 'wrapper'>    
+                                <p class = 'label'>Seasons:&nbsp</p>
+                                <p  id = 'ageRating' >1</p>
+                            </div> 
+                        </div>
+                        
+                        <div id = 'genres'>
+                            <p class = 'genre'>Action</p>
+                            <p class = 'genre'>Adventure</p>
+                            <p class = 'genre' > Super Natural</p>
+                            <p class = 'genre'>Demons</p>
+                            <p class = 'genre'>Horror</p>
+                            <p class = 'genre'> Shounen</p> 
+                        </div>
+                    </div>
+
+                </div>
+                <!------------------------------------------------------ Hero overs here ---------------------------------------------------------------- -->
+
+                <!----------------------------------------- From here the character introduction starts------------------------------------------------------ -->
+            <div id = 'charactersCast'>
+                    <div class = 'character' id='denji' style = "background-image:url('img/denjibackground.jpg')">
+                        <div class = 'character-info'>
+                            <div class = 'character-info-gradient-box'></div> 
+                            <div style = 'position:absolute; height:100%; width: 100% ; border: 0px solid blue'>
+                                <div style = 'transform-origin:5% 50%;transform:rotate(90deg);background-image:url("img/denjiBackgroundArrow.png"); width:100%;background-size:contain; height:20%;border:0px solid blue; background-repeat:repeat-x;position:absolute;' ></div>
+                                <img src = 'img/chainsawmanJapanese.png'>
+                                <img src = 'img/denjiBackground1.png' style = 'top:30%;position:absolute; left:75%;transform:rotate(180deg);'>
+                                </div>           
+                                <img class ='character-info-image'  src = 'img/denji.png' style = 'z-index:1;'> 
+                                <div  class = 'image-gradient-box'  style = 'z-index:1;'></div>
+                            <div class = 'character-info-parent'>
+                                
+                                <div class = 'character-info-text-parent'>
+                                    
+                                    
+                                    <img src = 'img/denjiName.png' class = 'character-info-name' style = 'display:block; z-index:1;top:-12%;'>
+                                
+                                    <p class = 'character-info-text' >
+                                        Denji (デンジ?) is the titular protagonist of the Chainsaw Man manga and anime series. He is the main protagonist of the Public Safety Saga and the deuteragonist of the Academy Saga.
+                                        As a young boy, he inherits his father's debts from the Yakuza. After meeting Pochita, he becomes a Devil Hunter for the Yakuza in an attempt to clear his debt. Once the Yakuza, under the control of a Devil, betrays him, he dies and Pochita becomes his heart. He is then revived and can become the Chainsaw Man (チェンソーマン Chensō Man?) by pulling a cord on his chest. After meeting Makima, he became a Public Safety Devil Hunter as a member of Tokyo Special Division 4.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <div class = 'character' id = 'pochita' style = "background-image:url('img/pochitaBackground.png'); background-color:black;background-size:contain;transform:scaleX(1);">
+                        <div class = 'character-info' style = 'transform:scaleX(-1);'>
+                            <div class = 'character-info-gradient-box' style = 'backdrop-filter:blur(10px);'></div> 
+                            <div style = 'position:absolute; height:100%; width: 100% ; border: 0px solid blue'>
+                                <div style = 'transform-origin:5% 50%;transform:rotate(90deg);background-image:url("img/arrowpochita.png"); width:100%;background-size:contain; height:20%;border:0px solid blue; background-repeat:repeat-x;position:absolute;' ></div>
+                                <img src = 'img/pochitaJapanese.png' style  = 'transform:scaleX(-1)'>
+                                <img src = 'img/pochitaNameGlitch.png' style = 'position:absolute; top:20%; left:80%;transform:scale(-1.4,1.4) rotate(90deg)'>
+
+                                </div>  
+                            <img class ='character-info-image'  src = 'img/pochita.png' style = 'left:70%;bottom:-2%;z-index:1;'>
+                            <div  class = 'image-gradient-box' style = 'z-index:1;'>                            
+                            </div>    
+                            <div class = 'character-info-parent'>
+                                
+                                <div class = 'character-info-text-parent'>
+                                    
+                                    
+
+                                    <img src = 'img/pochitaName.png' class = 'character-info-name' style = 'display:block; z-index:1;top:-20%;text-shadow:0 0 10px orange; transform:scaleX(-1);'>
+                                
+                                    <p class = 'character-info-text' style = "transform:scaleX(-1)">
+                                        Pochita (ポチタ?) is the Chainsaw Devil (チェンソーの悪あく魔ま Chensō no Akuma?) who embodies the fear of chainsaws. He was the original Chainsaw Man (チェンソーマン Chensō Man?) prior to becoming Denji's heart. He is the overarching titular protagonist of the series. He appears to be a small orange canine-like Devil with a chainsaw-like appendage protruding from the center of his head. Handles emerge from his body allowing him to be wielded like a chainsaw, and his short tail is in the shape of a chainsaw's pull cord.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <div class = 'character' id = 'makima' style = "background-image:url('img/makimaBackground2.png'); background-color:black;background-size:contain;">
+                        <div class = 'character-info' >
+                            <div class = 'character-info-gradient-box' ></div> 
+                            <div style = 'position:absolute; height:100%; width: 100% ;'>
+                                <div style = 'position:absolute;transform-origin:5% 50%;transform:rotate(90deg);background-image:url("img/arrowMakima.png"); width:100%;background-size:contain; height:20%; background-repeat:repeat-x;' ></div>
+                                <img src = 'img/makimaJapanese.png' style = 'position:absolute;transform:scale(0.6) rotate(90deg);left:-48%;top:-25%;'>
+                                <img src = 'img/makimaNameGlitch.png' style = 'position:absolute; top:20%; left:75%;transform:scale(1.4) rotate(90deg)'>
+                                <img src = 'img/makimaNameGlitch.png' style = 'position:absolute; top:20%;left:75%;transform:rotate(90deg) scale(1.4);'>
+                                </div>  
+                            <img class ='character-info-image'  src = 'img/makima.png' style = 'transform:scale(1.8);left:60%;bottom:0;z-index:1;'>
+                            <div  class = 'image-gradient-box' style = 'z-index:1;'>                            
+                            </div>    
+                            <div class = 'character-info-parent'>
+                                
+                                <div class = 'character-info-text-parent'>
+                                    
+                                    
+
+                                    <img src = 'img/makimaName.png' class = 'character-info-name' style = 'display:block; z-index:1;top:-20%;text-shadow:0 0 10px orange;'>
+                                
+                                    <p class = 'character-info-text' style = 'top:-45%'>
+                                        Makima (マキマ?) was the main antagonist of the Public Safety Saga. She was a high-ranking Public Safety Devil Hunter who took Denji in as her human pet.
+
+                                        She is later revealed to be the Control Devil (支し配はいの悪あく魔ま Shihai no Akuma?) who embodies the fear of control or conquest. Following her death, she is reincarnated as Nayuta.Makima is a Devil resembling a human woman in her twenties of average build, and marginally above average height (168 cm/5'6"[1] to 173 cm/5'8").[2] She has long light red/pale auburn hair, normally kept in a loose braid with bangs reaching just past her eyebrows and two longer side bangs that frame her face. Her eyes are yellow with multiple red rings within them, making them the only visible sign of her inhuman nature.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                </div>    
+        
+        </div>    
+    </div>  
+
+
+
+    
+
+       <!-- This part contains all the script which start executing after they have loaded or are being called from browser interactions -->
+        <script lang = 'javascript'>
+        
+
+
+
+
+           function call(event){ 
+            alert(event.target.previousElementSibling.style.border = "2px solid red");
+           }
+
+            function initialTransition(){
+                var heroInfo = document.getElementById('hero-info');
+                heroInfo.style.opacity = 1;
+                heroInfo.style.right = 0;
+                
+                document.getElementById('hero-image').style.opacity= 1;
+            }
+
+
+            var playTheVideo = function(){ console.log(document.documentElement.scrollTop);
+                setTimeout(
+                    ( function(){ // this script brings the onload effects of presentation
+                        var vid = document.getElementById('video'); 
+                       
+                        vid.play(); 
+                        vid.style.opacity = 1;
+
+                  }) , 4500);
+            }
+
+
+            var previousScroll = 0 , // initially there will be no scrolling the value is set to 0
+              currentSCroll ,
+              topPosition = 0,
+              count = 1;
+         
+      
+
+
+            function scrollEffect(){ 
+
+                var bod = document.getElementsByTagName('body')[0];
+                // bod.removeAttribute('onscroll');
+           
+
+                currentScroll = document.documentElement.scrollTop;
+                var elem = document.getElementById('scrollWrapperFixed');
+                console.log( currentScroll - previousScroll);
+
+                // multiplication with 7 and division with 4 is done to give the effect the scrollinng is available as much as there is content 
+                // as the parent container height more than content and the scroll bar will get stuck at upper side even when the content has reached the bottom
+                if( currentScroll - previousScroll >= 8*window.innerHeight/4 && count <= 3){ 
+                   
+                    topPosition += window.innerHeight;
+                    elem.style.transform = 'translateY(' + -topPosition + 'px)'; 
+                    previousScroll = document.documentElement.scrollTop;
+                    count++;
+                    
+                 
+                }else if( currentScroll - previousScroll <= -7*window.innerHeight/4 && count > 1){ // here the value is 7 and above it's 7.7 because
+                // I'm using scrollTop value, scrolling always starts at 0 so the bottom element will have more room to get scrolled but the topmost element may not 
+                    
+                    console.log(currentScroll - previousScroll);
+                    topPosition -= window.innerHeight;
+                    elem.style.transform = 'translateY(' + -topPosition +'px)';
+                    previousScroll = document.documentElement.scrollTop;
+                    count--;
+           
+
+                }   
+                setTimeout( function() { bod.setAttribute('onscroll' , 'scrollEffect()'); } , 0);
+             
+            }
+
+
+
+        </script>    
+    </body>
+</html>
